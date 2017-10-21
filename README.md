@@ -5,3 +5,8 @@ ToteRouter was a fun project where I collaborated with Ian Griffith to create an
 Basically, the pick ticket information came from Savant WMS where we had JDBC access to the Microsoft SQL Server.  Ian helped figure out the mappings of tote to zone and some of the SQL server mappings, while I did the Java stuff, pulling that data and sending it over to the existing Routes web service.  If I recall correctly, we had this set up as a scheduled task on the Savant server to run every few minutes to route totes between picks.  Anyway, MotoSport and Backcountry are totally integrated now, so this hacky program was retired at the end of the MotoSport Phase-2 Integration project after a successful 10-monthtour of duty in early 2014.
 
 I saved this Java code because at one time, I hadn't really accessed RESTful web services, so I wanted to have a reference on how I did it.  If I had to do this same project again today, I'd use Python and Requests and have far less code, but I didn't know Python or how to work with REST at the time.  So, it's more for the history and memory.
+
+------------
+Files:
+* ToteRouter.java is the program file - I looked through it and most of the comments were still good, but I did clarify a few comments and deleted some of the hard-coded lines in the test function.
+* ToteRouter.properties is just the settings file, also took out the credentials and actual endpoint addresses.
